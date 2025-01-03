@@ -9,9 +9,9 @@ $dbname = "gopaldb";        // Database name
 // Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get form data
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message=$_POST['message'];
+    $name = $_get['name'];
+    $email = $_get['email'];
+    $message=$_get['message'];
 
     // Create a connection to the database
     $conn = new mysqli($servername, $username, $password, $dbname);
